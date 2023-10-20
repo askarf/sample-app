@@ -1,0 +1,2 @@
+class NewExamplePagesController < ApplicationController
+end
