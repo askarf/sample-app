@@ -11,6 +11,10 @@ class ApplicationController < ActionController::Base
     render json: { message: "Sorry, i'm not available now:(" }
   end
 
+  def hi_method
+    render json: { message: "hi" }
+  end
+
   def family_array
     render json: [
       { name: "Ayala", age: 20, hair_color: "Brown" },
@@ -18,5 +22,9 @@ class ApplicationController < ActionController::Base
       { name: "Sarala", age: 17, hair_color: "Dirty Blonde" },
       { name: "Bailey", age: 12, hair_color: "Brown" },
     ]
+  end
+
+  def current_time
+    render json: { message: "Current time:" }
   end
 end
